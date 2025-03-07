@@ -1,0 +1,36 @@
+body {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    margin: 3rem auto;
+    background-color: blue;
+    color: black;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    width: 12.5rem;
+}
+
+i {
+    position: absolute;
+    top: 0.3125rem;
+    right: 0.625rem;
+}
+
+.buttons {
+    margin-top: 0.625rem;
+}
+
+.buttons button {
+    padding: 0.3125rem 0.625rem;
+    margin: 0.3125rem;
+    border: none;
+    font-size: 0.875rem;
+}
+
+.open-btn {
+    margin-top: 3rem;
+    padding: 0.625rem;
+}

@@ -1,0 +1,180 @@
+/* CSS Variable  */
+:root {
+  --color-primary: ;
+  --color-primary-variant: ;
+  --color-bg-1: ;
+  --color-bg-2: ;
+  --color-bg-3: ;
+  --color-bg-4: ;
+  --color-light: ;
+  --color-white: ;
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+
+  --transistion: all 400ms ease;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  border: 0ch;
+  outline: 0ch;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Andada Pro", serif;
+  /* font-family: 'Uchen', serif; */
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+
+a {
+  transition: var(--transistion);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  max-width: 2160px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* =======================for nav bar=======================  */
+
+/* ======================end of nav bar======================  */
+
+/* =======================for header======================= */
+
+/* =======================end of header======================= */
+
+/* =====================for about section===================== */
+
+/* =======================end of about======================= */
+
+/* =======================for skill section======================= */
+
+/* =======================end of skill section======================= */
+
+/* =======================for project section======================= */
+
+/* =======================end of project section======================= */
+
+/* =======================for footer======================= */
+
+/* =======================end of footer======================= */
+
+/* =======================MEDIA QUERIES (medium screens)======================= */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  /* =================for nav================= */
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__links li {
+    height: 5rem;
+  }
+}
+/* =======================MEDIA QUERIES (small screens)======================= */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  /* =================for nav================= */
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__links li {
+    height: 5rem;
+  }
+}
+/* =======================MEDIA QUERIES (extra small screens)======================= */
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  /* =================for nav================= */
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__links li {
+    height: 5rem;
+  }
+}
+/* =======================MEDIA QUERIES (extra extra small screens)======================= */
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  /* =================for nav================= */
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__links li {
+    height: 5rem;
+  }
+}

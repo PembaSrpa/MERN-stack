@@ -1,0 +1,87 @@
+:root{
+    --border: 1px solid black;
+    --color3: #504B38;
+    --bgcolor: #F8F3D9;
+    --color1: #EBE5C2;
+    --color2: #B9B28A;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+}
+.container{
+    border: var(--border);
+    border-radius: 30px;
+    height: 90vh;
+    gap:20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    background-color: var(--color1);
+    border: var(--border);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+}
+.im{
+    height: 50%;
+    width: 100%;
+    background-color: var(--color3);
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    background-color: var(--color2);
+    flex: 1;
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button{
+    margin-left: 80%;
+    padding: 5px 10px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--bgcolor);
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card{
+        height: 90%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        height: 90%;
+    }
+}
+@media screen and (min-width: 789px) and (max-width: 1280px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);/
+    }
+}

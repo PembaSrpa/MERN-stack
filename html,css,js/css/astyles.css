@@ -1,0 +1,36 @@
+body {
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    display: block;
+}
+span, .nav-links{
+    display: inline;
+}
+.navbar{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nav-links, .button{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: lightblue;
+}
+a{
+    padding: 15px;
+}
+button{
+    background-color: lightblue;
+    border: 0px;
+}
