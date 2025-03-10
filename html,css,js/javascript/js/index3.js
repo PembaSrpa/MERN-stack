@@ -1,13 +1,11 @@
 const start = document.querySelector(".start");
 const stop = document.querySelector(".stop");
 const reset = document.querySelector(".reset");
-
 let hour = 0;
 let minute = 0;
 let second = 0;
 let time = false;
 let timer = null;
-
 displayTime();
 start.addEventListener("click", () => {
     if (!time) {
@@ -18,12 +16,10 @@ start.addEventListener("click", () => {
         }, 1000);
     }
 });
-
 stop.addEventListener("click", () => {
     time = false;
     clearInterval(timer);
 });
-
 reset.addEventListener("click", () => {
     time = false;
     clearInterval(timer);
@@ -32,7 +28,6 @@ reset.addEventListener("click", () => {
     second = 0;
     displayTime();
 });
-
 function G() {
     if (time) {
         second++;
@@ -48,7 +43,6 @@ function G() {
 }
 
 function displayTime(){
-    // Format numbers to always show two digits
     document.querySelector(".hr").innerHTML = hour;
     document.querySelector(".min").innerHTML = minute;
     document.querySelector(".sec").innerHTML = second;
