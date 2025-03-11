@@ -43,6 +43,9 @@ function G() {
 }
 
 function displayTime(){
+    hour=String(hour).padStart(2,"0");
+    minute=String(minute).padStart(2,"0");
+    second=String(second).padStart(2,"0");
     document.querySelector(".hr").innerHTML = hour;
     document.querySelector(".min").innerHTML = minute;
     document.querySelector(".sec").innerHTML = second;
