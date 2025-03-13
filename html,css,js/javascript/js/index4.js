@@ -53,8 +53,8 @@ const p1 = user.map((person) => {
         email: person.email
     };
 });
-console.log(p1);
 
+console.log(p1);
 const names = user.map(person => person.name);
 console.log(names);
 const formattedUsers = user.map((person, index) => {
