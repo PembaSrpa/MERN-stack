@@ -1,5 +1,19 @@
 @import "tailwindcss";
-
-#duck{
-    @apply border-2 
+input{
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid black;
+}
+button{
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    background-color: aqua;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
 }
